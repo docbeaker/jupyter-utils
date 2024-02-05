@@ -33,7 +33,6 @@ def read_kaggle_log(fp):
                         data=" ".join(parts[2:])
                     ))
                 except Exception as e:
-                    print(f"failed to process line {line.strip()}: {e}")
                     continue
     return nblog
 
